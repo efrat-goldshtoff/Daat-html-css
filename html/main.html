@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עמוד פוסטים</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="div-titles">
+            <h5 id="title1" class="titles">מרכז ידע</h5>
+            <h1 class="titles">כתבות, סיפורים ותכנים מעולם החינוך של רשת עמל</h1>
+            <h5 class="titles">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ea culpa perferendis ratione reprehenderit
+                beatae inventore reiciendis corrupti deserunt quae,
+                asperiores provident maiores voluptatem fugiat in
+                repudiandae facilis sequi ad nihil.</h5>
+        </div>
+    </header>
+
+    <div id="saerch-order">
+        <button id="search" class="search-order-buttons">🔍</button>
+        <input type="text" id="search-input" placeholder="חפש..." />
+        <div id="scroll-container">
+            <div id="order">
+                <button id="default-btn" class="search-order-buttons">הכל</button>
+            </div>
+            <button id="scroll-btn">←</button>
+        </div>
+    </div>
+
+    <div id="posts-table">
+    </div>
+    <button id="show-more-btn">הצג עוד</button>
+
+    <div id="contact">
+        <div id="contact-titles">
+            <h5>צור קשר</h5>
+            <h1 id="first-h1">מתעניינים בלימודים אצלנו</h1>
+            <h1>ורוצים לדעת מה מחכה לכם?</h1>
+            <h3>כותרת כותרת כותרת כותרת כותרת כותרת כותרת כותרת כותרת כותרת</h3>
+            <div class="contact-details">
+                <p><span>✉️</span> כתובת אימייל: hello@gmail.com </p>
+            </div>
+            <div class="contact-details">
+                <p><span>📞</span> מספר טלפון: 03-6161611</p>
+            </div>
+        </div>
+        <div id="out-form">
+            <form id="myForm">
+                <input type="text" id="full-name" placeholder="שם מלא" required />
+                <input type="tel" id="phone" placeholder="פלאפון" required />
+                <input type="email" id="email" placeholder="אימייל" required />
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="הודעה"></textarea>
+                <button id="submit-btn" type="submit">שליחה</button>
+            </form>
+            <div id="success-message">
+                ההודעה נשלחה בהצלחה!
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/posts.js"></script>
+<script src="../js/app.js"></script>
+
+</html>
