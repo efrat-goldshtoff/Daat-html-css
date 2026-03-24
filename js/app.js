@@ -108,13 +108,18 @@ function handleArrowScroll() {
             scrollBtn.style.display = 'none';
         }
     }
+
+    // Ensure start at beginning for predictable button behavior
+    scrollContainer.scrollLeft = 0;
+
     checkScroll();
 
     window.addEventListener('resize', checkScroll);
 
     scrollBtn.addEventListener('click', function () {
         const scrollAmount = 200;
-        const directionMultiplier = document.dir === 'rtl' ? -1 : 1;
+        const isRtl = getComputedStyle(scrollContainer).direction === 'rtl';
+        const directionMultiplier = isRtl ? -1 : 1;
 
         scrollContainer.scrollBy({ left: scrollAmount * directionMultiplier, behavior: 'smooth' });
         setTimeout(checkScroll, 100);
